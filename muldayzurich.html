@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderWaves</title>
+    <style>
+       body{
+        background-color: #fff;
+        padding-top: 40px;
+       }
+       .main{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        background-color: #043262;
+        position: fixed;
+        top: 0;
+       }
+       .logo{
+        width: 20%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        justify-content: center;
+        position: absolute;
+        font-weight: bold;
+        font-size: larger;
+       }
+       .logoimg{
+        width: 280px;
+        height: 55px;
+       }
+       .navbar{
+        width: 80%;
+        height: 60px;
+        background-color: #043262;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+       }
+       ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+       }
+       li a{
+        margin-right: 40px;
+        border-right: 1px solid rgb(255, 255, 255);
+        padding-right: 20px;
+        height: 35px;
+        display: flex;
+        font-size: 20px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffffd7;
+       }
+       li a:hover{
+        color: rgba(201, 149, 19, 0.76);
+        font-weight: 600;
+       }
+       span{
+        font-weight: bolder;
+        font-size: x-large;
+        color: #ffffffd7;
+       }
+       .mainpic{
+       width: 100%;
+       height: 580px;
+       background-image: url(zurich1.jpg);
+       background-repeat: no-repeat;
+       background-size: 100% 100%;
+       background-attachment: fixed;
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       }
+       .mainhead{
+        color: #fff;
+        font-size: 70px;
+        margin-bottom: 0;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .subhead{
+        margin-top: 0;
+        text-transform: uppercase;
+        
+       }
+       .para{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        height: 380px;
+        flex-flow: column;
+        margin-top: 20px; 
+       }
+       .special{
+        margin-bottom: 0;
+        color: #043262;
+        text-transform: uppercase;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       p{
+        height: 130px;
+        width: 550px;
+        margin: 0;
+        font-size: 19px;
+       }
+       .subpics{
+        width: 100%;
+        height: 340px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+       }
+       .pic{
+        width: 660px;
+        margin-right: 10px;
+        height: 330px;
+       }
+       @media (min-width: 300px) and (max-width: 600px){
+        .main{
+		padding: 1.3rem 5%;
+	}
+	.navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		height: 90px;
+		background-color: #012244b9;
+	}
+	.logo{
+		left: 20%;
+	}
+    .logoimg{
+        width: 320px;
+        height: 65px;
+    }
+	ul{
+		justify-content: space-around;
+		flex-flow: row wrap;
+	}
+	li a{
+		flex-direction: column;
+		display: block;
+		margin: 4px;
+		font-size: 17px;
+		font-weight: 500;
+		border-right: none;
+	}
+	span{
+		display: none;
+	}
+        .mainpic{
+       width: 600px;
+       height: 500px;
+       }
+       .mainhead{
+        font-size: 60px; 
+       }
+       .subhead{
+        font-size: 30px;
+       }
+       .para{
+        width: 600px;
+        height: 300px;
+       }
+       .special{
+        margin-bottom: 7px;
+        font-size: 25px;
+       }
+       p{
+        height: 100px;
+        width: 450px;
+        font-size: 15px;
+       }
+       .subpics{
+        width: 600px;
+        height: 820px;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       }
+       .pic{
+        width: 590px;
+        margin-right: 0;
+        height: 400px;
+        margin-top: 10px;
+       }
+       }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="logo"><img src="svg-formatter-beautifier.png" class="logoimg"></div>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li> <a href="tours.html">Tours </a></li>
+            <li> <a href="aboutus.html">About Us </a></li>
+            <li> <a href="contact.html">Contact Us </a></li>
+            <li> <a href="signin.html">Sign In </a></li>
+        </ul>
+        <span>(821)074321</span>
+    </div>
+   </div>
+   <div class="mainpic">
+    <h1 class="mainhead">ZURICH</h1>
+    <h1 class="subhead">Switzerland</h1>
+   </div>
+   <div class="para"><h1 class="special">Special In Zurich</h1>
+    <p>Zurich is well worth a visit for its fascinating museums, epic nightlife, extravagant shopping, and discovering different cuisines. However, you cannot yet view any breathtaking mountains and spectacular glaciers in Zurich. It's the gorgeous churches, picturesque lake, and fantastic zoo you'll find instead.</p>
+<p>Zurich is a popular destination with expats for many reasons, such as its stunning scenery. The city is located in the Alps, at the northwesterly end of Lake Zurich, so you are guaranteed to see some of the most beautiful sights in Switzerland.</p></div>
+   <div class="subpics">
+    <div class="pic"><img src="zurich2.jpg" width="590px" height="400px"></div>
+    <div class="pic"><img src="zurich3.jpg" width="590px" height="400px"></div>
+   </div>
+</body>
+</html>

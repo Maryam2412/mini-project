@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | WanderWaves</title>
+    <style>
+       body{
+        background-color: #fff;
+        padding-top: 60px;
+       }
+       .main{
+        width: 100%;
+        height: 60px;
+        background-color: #043263;
+        display: flex;
+        position: fixed;
+        top: 0;
+       }
+       .logo{
+        width: 20%;
+        height: 60px;
+        display: flex;
+        position: absolute;
+        align-items: center;
+        padding-left: 20px;
+        justify-content: center;
+        font-weight: bold;
+        font-size: larger;
+       }
+       .logoimg{
+        width: 280px;
+        height: 55px;
+       }
+       .navbar{
+        width: 80%;
+        height: 60px;
+        background-color: #043263;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+       }
+       ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+       }
+       li a{
+        margin-right: 40px;
+        border-right: 2px solid #ffffff;
+        padding-right: 20px;
+        height: 35px;
+        display: flex;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffffd7
+       }
+       li a:hover{
+        color: rgba(201, 149, 19, 0.76);
+        font-weight: 600;
+       }
+      
+       span{
+        font-weight: bolder;
+        font-size: x-large;
+        color: #ffffffd5;
+       }
+       .background{
+        width: 101%;
+       height: 1270px;
+       margin-top: -80px;
+        display: flex;
+        background-image: url(aboutbackimg.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       .aboutmain{
+        width: 100%;
+        height: 600px;
+        display: flex;
+        margin-top: 130px;
+        align-items: center;
+        justify-content: center;
+       }
+       .abouthead{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 7px solid #fff;
+        width: 450px;
+        height: 430px;
+        font-size: 60px;
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+        color: #ffffff;
+       }
+       .aboutpara{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #ffffff;
+        width: 450px;
+        height: 444px;
+       }
+       .para1{
+        font-size: 18px;
+        width: 400px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .para2{
+        font-size: 18px;
+        width: 400px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       }
+       .intro{
+        background-color: #fff;
+        width: 100%;
+        height: 300px;
+        border-bottom: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       }
+       .introhead{
+        font-size: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 2px;
+        color: #043263;
+       }
+       .intropara{
+        font-size: 17px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-top: 0;
+        width: 700px;
+       }
+       .footer{
+        width: 100%;
+        height: 280px;
+        border-top: 6px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #043263;
+       }
+       .foot1{
+        width: 300px;
+        height: 100px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffffd7;
+        font-family: sans-serif;
+        margin-right: 300px;
+       }
+       .footerimg{
+        width: 450px;
+        height: 150px;
+       }
+       @media (min-width: 300px) and (max-width: 600px){
+        .main{
+		padding: 1.3rem 5%;
+	}
+	.navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		height: 120px;
+		background-color: #012244b9;
+	}
+	.logo{
+		left: 20%;
+	}
+    .logoimg{
+        width: 320px;
+        height: 65px;
+    }
+	ul{
+		justify-content: space-around;
+		flex-flow: row wrap;
+	}
+	li a{
+		flex-direction: column;
+		display: block;
+		margin: 4px;
+		font-size: 17px;
+		font-weight: 500;
+		border-right: none;
+	}
+	span{
+		display: none;
+	}
+        .background{
+        width: 600px;
+       height: 1380px;
+       } 
+        .aboutmain{
+        height: 900px;
+        flex-direction: column;
+       }
+       .abouthead{
+        width: 400px;
+        height: 60px;
+        margin-top: -80px;
+        border: none;
+        font-size: 55px;
+        margin-bottom: 20px;
+       }
+       .aboutpara{
+        width: 500px;
+        height: 480px;
+       }
+       .para1{
+        font-size: 20px;
+        width: 450px;
+       }
+       .para2{
+        font-size: 20px;
+        width: 450px;
+       }
+       .intro{
+        height: 200px;
+        margin-top: -100px;
+       }
+       .introhead{
+        font-size: 25px;
+        letter-spacing: 1px;
+        
+       }
+       .intropara{
+        font-size: 15px;
+        width: 500px;
+       }
+       .footer{
+        height: 240px;
+       }
+       .foot1{
+        width: 300px;
+        height: 100px;
+        font-size: 13px;
+        margin-right: -40px;
+       }
+       .footerimg{
+        width: 300px;
+        height: 100px;
+       }
+       }
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="logo"><img src="svg-formatter-beautifier.png" class="logoimg"></div>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li> <a href="tours.html">Tours </a></li>
+            <li> <a href="aboutus.html">About Us </a></li>
+            <li> <a href="contact.html">Contact Us </a></li>
+            <li> <a href="signin.html">Sign In </a></li>
+        </ul>
+        <span>(821)074321</span>
+    </div>
+   </div>
+   <div class="background">
+    <div class="aboutmain">
+        <div class="abouthead">ABOUT US</div><div class="aboutpara"><p class="para1">What sets WanderWaves apart is that we provide multiple options of traveling for our users. WanderWaves is made for people having difficulty to choose where to go and which country will be suitable for their next journey.</p>
+        <p class="para2">Users of WanderWaves can easily pick One-day tours and Multi-days tours by visiting our <b>Tours</b> page. WanderWaves made it simple to pick your next destination according to your likings. And if you have any difficulty to choose your tour, you can contact us for help, we will be pleased to pick your tour and guiding you. </p></div>
+       </div>
+       <div class="intro">
+        <h1 class="introhead">OWNER</h1>
+        <p class="intropara">The Owner of this website "WanderWaves", Maryam Fareed and Bareera Zahid currently doing ACCP (Aptech Certified Computer Professional) in Aptech North Nazimabad campus II learning software development and global technology. On thier way of being a full stack developer. </p>
+       </div>
+       <div class="footer">
+        <div class="foot1">(821)074321 <br> Aptech NN2, North Nazimabad <br> 74600, Karachi <br> 2023 WanderWaves, All rights reserved <br>Website by Maryam and Bareerah</div>
+        <div class="foot2"><img src="svg-formatter-beautifier.png" class="footerimg"></div>
+   </div>
+   
+</body>
+</html>

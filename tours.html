@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tours | WanderWaves</title>
+    <style>
+       body{
+        background-color: #fff;
+        padding-top: 60px;
+       }
+       .main{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        background-color: #043262;
+        position: fixed;
+        top: 0;
+       }
+       .logo{
+        width: 20%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: larger;
+       }
+       .logoimg{
+        width: 280px;
+        height: 55px;
+       }
+       .navbar{
+        width: 80%;
+        height: 60px;
+        background-color: #043262;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+       }
+       ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-around;
+       }
+       li a{
+        margin-right: 40px;
+        border-right: 2px solid #fff;
+        padding-right: 20px;
+        height: 35px;
+        font-weight: bolder;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        text-decoration: none;
+        color: #ffffffd7;
+       }
+       li a:hover{
+        color: rgba(201, 149, 19, 0.76);
+        font-weight: 600;
+       }
+       span{
+        font-weight: bolder;
+        font-size: x-large;
+        color: #ffffffd7;
+       }
+       h1{
+        text-align: center;
+        margin: 80px;
+        color: #043263; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 50px;
+       }
+       .daytour{
+        width: 100%;
+        height: 430px;
+        display: flex;
+        align-items: center;
+       }
+       .day1{
+        height: 420px;
+        width: 435px;
+        margin-left: 10px;
+        background-image: url(dublin1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .day2{
+        height: 420px;
+        width: 435px;
+        margin-left: 10px;
+        background-image: url(geneva1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .day3{
+        height: 420px;
+        width: 420px;
+        margin-left: 10px;
+        background-image: url(milan1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .click{
+        font-size: 25px;
+        font-weight: bold;
+        color: #ffffff;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+       }
+       .click:hover{
+        font-weight: bolder;
+        font-size: 30px;
+       }
+       .label{
+        font-size: 40px;
+        font-weight: bolder;
+        color: #fff;
+        letter-spacing: 1px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #043263a2;
+        width: 100%;
+        text-align: center;
+        height: 100px;
+        margin-bottom: -150px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+       }
+       .multidaytour{
+        width: 100%;
+        height: 860px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+       }
+       .multiday1{
+        height: 420px;
+        width: 430px;
+        margin-left: 10px;
+        background-image: url(victoria1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .multiday2{
+        height: 420px;
+        width: 430px;
+        margin-left: 10px;
+        background-image: url(paris1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+       }
+       .multiday3{
+        height: 420px;
+        width: 430px;
+        margin-left: 10px;
+        background-image: url(capri1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+       }
+       .multiday4{
+        height: 420px;
+        width: 430px;
+        margin-left: 10px;
+        background-image: url(zurich1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+       }
+       .multiday5{
+        height: 420px;
+        width: 430px;
+        margin-left: 10px;
+        background-image: url(meteora1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+       }
+       .multiday6{
+        height: 420px;
+        width: 430px;
+        margin-left: 10px;
+        background-image: url(auckland1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: center;
+        
+       }
+       a{
+        text-decoration: none;
+       }
+       .qoute{
+        margin-top: 30px;
+        width: 100%;
+        height: 500px;
+        background-image: url(backtourimg.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .qoutation{
+        width: 900px;
+        color: #ffffff;
+        height: 100px;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        justify-content: center;
+        text-transform: capitalize;
+        letter-spacing: 2px;
+        font-size: 25px;
+       }
+       .footer{
+        width: 100%;
+        height: 280px;
+        border-top: 6px solid #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #043263;
+       }
+       .foot1{
+        width: 300px;
+        height: 100px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #ffffffd7;
+        font-family: sans-serif;
+        margin-right: 300px;
+       }
+       .footerimg{
+        height: 150px;
+        width: 450px;
+       }
+      @media (min-width: 300px) and (max-width: 600px){
+        .main{
+		padding: 1.3rem 5%;
+	}
+	.navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		flex-direction: column;
+		width: 100%;
+		height: 90px;
+		background-color: #012244b9;
+	}
+	.logo{
+		left: 20%;
+	}
+    .logoimg{
+        width: 320px;
+        height: 65px;
+    }
+	ul{
+		justify-content: space-around;
+		flex-flow: row wrap;
+	}
+	li a{
+		flex-direction: column;
+		display: block;
+		margin: 4px;
+		font-size: 17px;
+		font-weight: 500;
+		border-right: none;
+	}
+	span{
+		display: none;
+	}
+        h1{
+        margin-top: 150px;
+        margin-bottom: 30px;
+        width: 500px;
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .daytour{
+        height: 1270px;
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .day1{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .day2{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .day3{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .multidaytour{
+        width: 600px;
+        height: 2510px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       }
+       .multiday1{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .multiday2{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .multiday3{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .multiday4{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .multiday5{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .multiday6{
+        height: 400px;
+        width: 450px;
+        margin-left: 0;
+        margin-bottom: 15px;
+       }
+       .qoute{
+        margin-top: 5px;
+        width: 600px;
+        height: 500px;
+       }
+       .qoutation{
+        width: 500px; 
+        height: 150px;
+        letter-spacing: 1px;
+       }
+       .footer{
+        height: 240px;
+        width: 600px;
+       }
+       .foot1{
+        width: 300px;
+        height: 100px;
+        font-size: 13px;
+        margin-right: -40px;
+       }
+       .footerimg{
+        width: 300px;
+        height: 100px;
+       }
+      }
+    
+    </style>
+</head>
+<body>
+   <div class="main">
+    <div class="logo"><img src="svg-formatter-beautifier.png" class="logoimg"></div>
+    <div class="navbar">
+        <ul>
+            <li><a href="home.html"> Home </a></li>
+            <li> <a href="tours.html">Tours </a></li>
+            <li> <a href="aboutus.html">About Us </a></li>
+            <li> <a href="contact.html">Contact Us </a></li>
+            <li> <a href="signin.html">Sign In </a></li>
+        </ul>
+        <span>(821)074321</span>
+    </div>
+   </div>
+   <h1>DAY TOURS</h1>
+   <div class="daytour">
+  <a href="daydublin.html">  <div class="day1"><p class="click">Click To Know More</p><p class="label">Dublin - Ireland</p></div></a>
+   <a href="daygeneva.html"> <div class="day2"><p class="click">Click To Know More</p> <p class="label">Geneva - Switzerland</p></div></a>
+   <a href="daymilan.html"> <div class="day3"> <p class="click">Click To Know More</p><p class="label">Milan - Italy </p></div></a>
+   </div>
+   <h1>MULTI-DAY TOURS</h1>
+   <div class="multidaytour">
+   <a href="muldayvictoria.html"> <div class="multiday1"><p class="click">Click To Know More</p><p class="label">Victoria - Australia</p></div></a>
+   <a href="muldayparis.html"> <div class="multiday2"><p class="click">Click To Know More</p><p class="label">Paris - France</p></div></a>
+   <a href="muldaycapri.html"> <div class="multiday3"><p class="click">Click To Know More</p><p class="label">Capri - Italy</p></div></a>
+   <a href="muldayzurich.html"> <div class="multiday4"><p class="click">Click To Know More</p><p class="label">Zurich - Switzerland</p></div></a>
+   <a href="muldaymeteora.html"> <div class="multiday5"><p class="click">Click To Know More</p><p class="label">Meteora - Greece</p></div></a>
+   <a href="muldayauckland.html"> <div class="multiday6"><p class="click">Click To Know More</p><p class="label">Auckland - New Zealand</p></div></a>
+   </div>
+   <div class="qoute"><div class="qoutation">I don't know where I am going, But I'm on my way</div></div>
+   <div class="footer">
+    <div class="foot1">(821)074321 <br> Aptech NN2, North Nazimabad <br> 74600, Karachi <br> 2023 WanderWaves, All rights reserved <br>Website by Maryam and Bareerah</div>
+    <div class="foot2"><img src="svg-formatter-beautifier.png" class="footerimg"></div>
+</body>
+</html>
